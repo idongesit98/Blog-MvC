@@ -15,13 +15,17 @@ const UserSchema = mongoose.Schema(
             type:String,
             required:[true]
         },
+        profilePicture:{
+            type:String,
+            default:null
+        },
         email:{
             type:String,
             required:[true,"Please enter an email address"]
         },
         phone_number:{
             type:Number,
-            required:true,
+            required:true, 
             default:0
         },
         role:{

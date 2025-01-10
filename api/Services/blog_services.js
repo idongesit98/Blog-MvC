@@ -21,7 +21,8 @@ const createPost = async ({title,description,body,tags,author,state,user,role}) 
         })
 
         const savedPost = await newPost.save();
-        return {
+
+          return {
             code:201,
             success:true,
             message:'Post created successfully',
